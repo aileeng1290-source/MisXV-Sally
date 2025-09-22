@@ -1,0 +1,772 @@
+/* ==== FUENTES PERSONALIZADAS ==== */
+@font-face {
+  font-family: 'Brittany';
+  src: url("/Fuentes/Brittany.otf");
+}
+@font-face {
+  font-family: 'marchy_script';
+  src: url("/Fuentes/Marchy Script Demo.otf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'CormorantGaramond';
+  src: url("/Fuentes/CormorantGaramond-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: 'CormorantGaramond-I';
+  src: url("/Fuentes/CormorantGaramond-Italic-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: 'Cherolina';
+  src: url("/Fuentes/Cherolina.otf");
+}
+@font-face {
+  font-family: 'Hello_Honey';
+  src: url("/Fuentes/hello honey.otf");
+}
+@font-face {
+  font-family: 'Brittany_Signature';
+  src: url("/Fuentes/BrittanySignature.ttf");
+}
+@font-face {
+  font-family: 'BrownSugar';
+  src: url("/Fuentes/brown-sugar.ttf");
+}
+@font-face {
+  font-family: 'Le_Jour_Script';
+  src: url("/Fuentes/Le\ Jour\ Script\ Personal\ Use\ Only.otf");
+}
+@font-face {
+  font-family: 'Fiona';
+  src: url("/Fuentes/Fiona/Fiona-Regular.otf");
+}
+.contenido-central {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+/* ==== ESTILOS GENERALES ==== */
+body {
+  background: url("Fondoa.png") no-repeat center top;
+  background-size: cover;
+  background-attachment: scroll;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  text-align: center;
+  position: relative;
+}
+/* ==== MIS XV AÑOS EN LÍNEA ==== */
+.mis-xv {
+  display: flex;
+  align-items: flex-end;
+  font-family: 'BrownSugar', cursive;
+  justify-content: center;
+  gap: 0rem;
+  margin-top: 200px;
+  color: #4d6d8d;
+}
+.mis-xv .izquierdo {
+  font-size: 60px;
+}
+.mis-xv .derecho {
+  font-size: 200px;
+  line-height: 0.1;
+  left: 100px;
+}
+.Fecha{
+  margin-top: 100px;
+  width: 350px;
+}
+/* ==== TÍTULOS ==== */
+h1 {
+  font-family: 'Le_Jour_Script';
+  font-size: 80px;
+  color: #4d6d8d;
+  margin-top: 40px;
+  font-weight:lighter ;
+}
+h2 {
+  font-family: 'Brittany';
+  font-size: 80px;
+  color: #1f4068;
+  font-weight: lighter;
+  margin: -20px 0 30px 80px;
+}
+h3, h4 {
+  font-family: 'Brittany';
+  font-size: 150px;
+  font-weight: normal;
+  margin-bottom: 50px;
+  color: #4d6d8d;
+}
+h5 {
+  font-family: 'Brittany';
+  font-size: 50px;
+  font-weight: normal;
+  margin-bottom: 1rem;
+  
+}
+
+.texto{
+  font-family: 'CormorantGaramond';
+  color: #03080e;
+  font-size: 20px;
+  font-size: lighter;
+}
+
+.texto1{
+  font-family: 'CormorantGaramond';
+  color: #000000;
+  font-size: 20px;
+  font-size: lighter;
+
+}
+.texto-cursiva{
+  font-family: 'CormorantGaramond-I';
+  
+}
+.textod{
+  font-family: 'Brittany';
+  font-size: 70px;
+  color: #03090f;
+}
+
+.sub{
+  font-family: 'Brittany';
+  font-size: 50px;
+  font-weight: normal;
+  margin-top: 20px;
+}
+
+.acompa{
+  font-family:'CormorantGaramond';
+}
+
+
+/* ==== TEXTOS ==== */
+p {
+  font-size: 20px;
+  color: #333;
+  line-height: 1.6;
+  margin: 10px 0;
+  max-width: 600px;
+  text-align: center;
+}
+/* ==== BOTONES ==== */
+.boton-direccion, .boton-direccion2 {
+  margin-top: 10px;
+  text-align: center;
+}
+.boton-direccion button,
+.boton-direccion2 button {
+  background: linear-gradient(to bottom, #216094, #a9d8ee);;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-family: 'CormorantGaramond-I';
+ 
+
+}
+.boton-direccion button:hover {
+  background-color: #3285f1;
+}
+.boton-direccion2 button:hover {
+  background-color: #4d6d8d;
+}
+/* ==== PLAYER ==== */
+.player-container {
+  background-color: #e9e7e469;
+  padding: 15px 20px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 280px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto 40px auto;
+}
+.controls {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+.controls button {
+  background: transparent;
+  border: none;
+  font-size: 28px;
+  color: #4b88c1;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.controls button:hover {
+  color: rgb(4, 89, 173);
+}
+#progreso {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 6px;
+  background: #398bd8;
+  border-radius: 4px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+#progreso::-webkit-slider-thumb,
+#progreso::-moz-range-thumb {
+  width: 12px;
+  height: 12px;
+  background: #173d6b;
+  border-radius: 50%;
+  cursor: pointer;
+}
+/* ==== CUENTA REGRESIVA ==== */
+.cuenta-atras {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+  flex-wrap: wrap;
+}
+.grupo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.grande {
+  font-family: 'CormorantGaramond', serif;
+  font-size: 5.5rem;
+  font-weight: 800;
+  position: relative;
+  padding: 0 1rem;
+}
+.chico {
+  font-family: 'CormorantGaramond-I';
+  font-size: 2.5rem;
+  font-weight: 800;
+  position: relative;
+  padding: 0 1rem;
+}
+
+.grande::after {
+  content: ":";
+  position: absolute;
+  right: -1.2rem;
+  top: 0;
+  font-size: 5.5rem;
+  font-weight: 800;
+}
+.cuenta-atras .grupo:last-child .grande::after {
+  content: "";
+}
+.chico {
+  font-size: 1.6rem;
+  color: #555;
+  margin-top: 0.4rem;
+  text-align: center;
+}
+.seccion-fondo {
+  background-color: rgba(249, 245, 242, 0.7); /* Menos opaco */
+  border-radius: 20px;
+  padding: 10px 40px; /* Reducido */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.158);
+  margin: 200px 0;
+  position: relative;
+  z-index: 2;
+  max-width: 90%; /* Limita el ancho */
+}
+/* ==== FLORES DECORATIVAS ==== */
+.Flores_Sup {
+  position: absolute;
+  top: 560px;
+  left: 0;
+  width: 300px;
+  height: auto;
+  z-index: 0;
+  pointer-events: none;
+}
+.Flores_Inf{
+  position: absolute;
+  width: 300px;
+  height: auto;
+  pointer-events: none;
+}
+.Flores_Inf{
+  top: 0;
+  right: 0;
+}
+.Flores_Sup{
+  top: 150px;
+  left: 0;
+  z-index: 3;
+}
+.Hoja_Sup{
+  position: absolute;
+  width: 250px;
+  height: auto;
+  right: 0;
+  top: 300px;
+}
+
+.Hoja-D{ 
+  position: absolute;
+  width: 250px;
+  height: auto;
+  left: 0;
+ }
+
+ .Hoja-I{
+  position: absolute;
+  width: 250px;
+  height: auto;
+  right: 0;
+ }
+
+
+/* ==== MARIPOSA DECORATIVAS  ==== */
+.Mariposa_1, .Mariposa-2{
+  position: absolute;
+  width: 250px;
+  right: 600px;
+  top: 60px;
+  z-index: 3;
+}
+.Mariposa_1{
+  top: 560px;
+  Left: 600px;
+}
+
+/* ==== ITENERARIO ===*/
+.Contenedor-linea{
+  position: relative;
+}
+.linea-horizontal{
+  width: 350px;
+  height: 1px;
+  margin:0 auto 20px;
+  background-color: #1f4068;
+}
+
+.textoI{
+  font-family: 'Brittany';
+  font-size: 80px;
+}
+
+
+.textoi{
+  flex:1;
+  margin-left: 20px;
+  text-align: right;
+
+}
+.Contenedor-ceremonia, 
+.Contenedor-recepcion,
+.Contenedor-vals, 
+.Contenedor-cena,
+.Contenedor-baile,
+.Contenedor-despedida {
+  background-color: rgba(249, 245, 242, 0.7);
+  border-radius: 20px;
+  padding: 10px 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.158);
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;     /* centra verticalmente texto e imagen */
+  justify-content: space-between;
+  gap: 60px;               /* separa texto e imagen */
+  margin: 5px auto;   /* auto a los lados centra horizontalmente */
+  max-width: 600px;    /* ancho fijo para que se vea parejo */
+}
+
+/* Todas las imágenes con mismo tamaño */
+.iglesia2,
+.copas2,
+.cena,
+.baile,
+.carruaje,
+.vals {
+  width: 80px;   /* mismo ancho para todas */
+  height: 80px;  /* mismo alto para todas */
+  object-fit: contain; /* evita que se deformen */
+}
+
+
+
+
+/* ==== ICONOS ==== */
+.copas,
+.dress_code,
+.iglesia {
+  width: 100px;
+  height: auto;
+  margin: 20px 0 10px 0;
+}
+
+.codigo-vestimenta{
+  background-color: rgba(249, 245, 242, 0.7); /* Menos opaco */
+  border-radius: 20px;
+  padding: 10px 40px; /* Reducido */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.158);
+  margin: 150px auto;
+  position: relative;
+  z-index: 2;
+  width: 400px;
+  min-height: 600px;
+  
+  
+}
+/* ==== ANIMACIONES ==== */
+.deslizar {
+  animation: deslizar 2s ease-in-out;
+  position: relative;
+  font-style: italic;
+  margin-top: 8rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+@keyframes subir {
+  from {
+    transform: translateY(60px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+.subir {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+  will-change: opacity, transform;
+}
+
+.subir.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.foto-xv {
+  width: 80%;
+  max-width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  opacity: 0;
+  transform: translateY(60px);
+  animation: fadeUp 1.2s ease-out forwards;
+  animation-delay: 0.3s; /* puedes ajustar el retraso */
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.mariposas-gif {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  max-width: 600px;
+  pointer-events: none;
+  z-index: 10;
+  opacity: 0;
+  transition: opacity 1.2s ease-out;
+}
+
+.mariposas-gif.visible {
+  opacity: 1;
+}
+
+/* Animación de aparición */
+@keyframes mostrarMariposas {
+  to {
+    opacity: 1;
+  }
+}
+
+.mariposas-final {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.mariposas-final img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+.circulo{
+  width: 40px;
+  height: 40px;
+  background-color: #89CFF0;
+  border-radius:50% ;
+  justify-content: center;
+  
+}
+
+.Flor_Repetida {
+  position: absolute;
+  bottom: 100px; /* ajusta según necesites */
+  left: 0;
+  width: 150px;
+  height: auto;
+  z-index: 3;
+  pointer-events: none;
+}
+
+
+.bloque-circulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centra el círculo horizontalmente */
+  gap: 30px; /* espacio entre texto y círculo */
+}
+
+.confirmacion-whatsapp {
+  text-align: center;
+  margin: 40px 0;
+  font-family: 'CormorantGaramond', serif;
+}
+
+.confirmacion-whatsapp,.texto-Con {
+  margin-top: 5px;
+  font-family: 'CormorantGaramond';
+  font-size: 28px;
+  color: #090e1a;
+}
+
+.confirmacion-whatsapp p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.confirmacion-whatsapp button {
+  background: linear-gradient(to bottom, #216094, #a9d8ee);;
+  color: rgb(255, 255, 255);
+  font-family: 'CormorantGaramond', cursive;
+  font-size: 20px;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 80px;
+}
+
+.confirmacion-whatsapp button:hover {
+  background-color: #216094;
+}
+.Fondo-Sobre{
+  background-color: rgba(249, 245, 242, 0.7);
+  border-radius: 20px;
+  padding: 10px 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.158);
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;     /* centra verticalmente texto e imagen */
+  justify-content: space-between;
+  gap: 60px;               /* separa texto e imagen */
+  margin: 5px auto;   /* auto a los lados centra horizontalmente */
+  max-width: 600px;
+  
+}
+
+.sobre{
+  width: 80px;
+  height: auto;
+}
+
+
+/* ==== RESPONSIVO ==== */
+@media (max-width: 600px) {
+  .mis-xv .izquierdo {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left: -40px;
+  }
+  .mis-xv .derecho {
+    font-size: 100px;
+    line-height: 0.1;
+  }
+  .Fecha{
+    width: 150px;
+    margin-top: 20px;
+  }
+  .player-container{
+    width: 200px;
+  }
+  .seccion-fondo {
+    padding: 5px 10px; /* Reducido en móviles */
+    top: calc(100vh - 1040px);
+    margin-bottom: 250px;
+  }
+  .seccion-fondo h5 {
+    font-size: 50px;
+  }
+
+  .codigo-vestimenta{
+    width: 300px;
+    min-height: 500px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+    
+  h1 {
+    font-size: 50px;
+    line-height: 0.1;
+  }
+  h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  h3 {
+    font-size: 50px;
+    margin: 30px 0 20px;
+  }
+  h4 {
+    font-size: 70px;
+    margin: 150px 0 10px;
+  }
+  h5{
+    font-size: 60px;
+    margin: 0;
+  }
+
+  .texto{
+    font-size: 25px;    
+    margin-top: 5px;
+    line-height: 0.9;
+  }
+
+  .acompa{
+    margin-top: -400px;
+    font-size: 22px;
+  }
+
+  .texto1{
+    line-height: 1.5;
+    font-size: 25px ;
+  }
+
+  .textoI{
+    font-size: 60px;
+    margin-top: 80px;
+  }
+
+
+  .texto-cursiva{
+    font-size: 20px;
+  }
+  .cuenta-atras {
+    gap: 1rem;
+  }
+  .grande,
+  .grande::after {
+    font-size: 2.3rem;
+    right: -0.5rem;
+  }
+  .chico {
+    font-size: 1rem;
+  }
+  .boton-direccion button,
+  .boton-direccion2 button {
+    font-size: 18px;
+    padding: 8px 16px;
+  }
+  .Mariposa_1{
+    width: 130px;
+    left: 35px;
+    top: 345px;
+  }  
+  .Mariposa-2{
+    width: 140px;
+    right: 50px;
+    top: 110px;
+  }
+  
+  .Flores_Inf{
+    width: 300px;
+  }
+  .Flores_Sup{
+    position: absolute;
+    width: 300px;
+    top: calc(100vh - 505px);
+    left: 0;
+    z-index: 0;
+    pointer-events: none;
+  }
+  .Hoja_Sup{
+    width: 130px;
+  }
+
+
+  .copas,
+  .iglesia {
+    width: 110px;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: -30px;
+    
+  }
+
+  .dress_code{
+    width: 80px;
+    margin-top: 5px;
+  }
+  .controls button {
+    font-size: 24px;
+  }
+  .circulo{
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    z-index: 2;
+  }
+
+  .linea-horizontal{
+
+    width: 200px;
+
+    height: 1px;
+    margin: -50px;
+    margin-bottom: -10px;
+  }
+  .Hoja-I,.Hoja-D{
+    margin-top: 20px;
+    width: 220px;
+  }
+}
+
