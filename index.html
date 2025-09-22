@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mis XV Años</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+  <div class="contenido-central">
+    <!-- Texto Mis XV años -->
+    <div class="mis-xv subir">
+      <span class="izquierdo">MIS</span>
+      <span class="derecho">XV</span>
+    </div>
+    <h1 class="subir">Sally Xiomaras</h1>
+    
+    <!-- Fecha -->
+    <img src="Fecha.png" alt="Fecha" class="Fecha subir">
+    <!-- Reproductor de música -->
+    <section class="reproductor_musica subir">
+      <h3>Dale Play:</h3>
+      <div class="player-container">
+        <audio id="cancion" preload="metadata">
+          <source src="Sign of the Times.mpeg" type="audio/mpeg" />
+          Tu navegador no soporta audio.
+        </audio>
+        <div class="controls">
+          <button onclick="retroceder()"><i class="bi bi-skip-backward-fill"></i></button>
+          <button onclick="reproducirPausar()" id="botonPlay">
+            <i class="bi bi-play-circle-fill" id="iconoControl"></i>
+          </button>
+          <button onclick="adelantar()"><i class="bi bi-skip-forward-fill"></i></button>
+        </div>
+        <input type="range" value="0" id="progreso" />
+      </div>
+    </section>
+    
+    <div class="seccion-fondo subir">
+      <p class="sub subir">¡Solo faltan!</p>
+      <div class="cuenta-atras subir">
+        <div class="grupo">
+          <p class="grande" id="dias">00</p>
+          <p class="chico">Días</p>
+        </div>
+        <div class="grupo">
+          <p class="grande" id="horas">00</p>
+          <p class="chico">Horas</p>
+        </div>
+        <div class="grupo">
+          <p class="grande" id="minutos">00</p>
+          <p class="chico">Minutos</p>
+        </div>
+        <div class="grupo">
+          <p class="grande" id="segundos">00</p>
+          <p class="chico">Segundos</p>
+        </div>
+      </div>
+    </div>
+    <p class="subir acompa">¡Acompáñame en este día tan especial!</p>
+
+    <div class="subir">
+      <img src="15.png" alt="foto" class="foto-xv"/>
+    </div>
+
+    <img src="Iglesia.png" class="iglesia subir" alt="Iglesia" />
+    <h5 class="subir">Ceremonia Religiosa</h5>
+    <div class="Ceremonia subir">
+      <p class="texto">Santuario de San Lorenzo</p>
+      <p class="texto">6:00 PM</p>
+      <p class="texto-cursiva">Av. Valle de Juárez s/n,<br> San Lorenzo, 32320 Juárez, Chih.</p>
+    </div>
+    <div class="boton-direccion subir">
+      <a href="https://maps.app.goo.gl/eT5WMmWtNGWnFgeN7" target="_blank" rel="noopener noreferrer">
+        <button>Cómo llegar</button>
+      </a>
+    </div>
+    <img src="Copas.png" class="copas subir" alt="Copas" />
+    <h5 class=" subir">Recepción</h5>
+    <div class="Recepcion subir">
+      <p class="texto">El Saguan</p>
+      <p class="texto">9:00PM</p>
+      <p class="texto-cursiva">Tompiros 1719, Paso del Nte., 32380 <br> Juárez, Chih.</p>
+    </div>
+    <div class="boton-direccion2 subir">
+      <a href="https://maps.app.goo.gl/VcsMpomPK7w3VAjRA" target="_blank" rel="noopener noreferrer">
+        <button>Cómo llegar</button>
+      </a>
+    </div>
+
+    
+
+    <div class="Itinerario ">
+      <img src="Hoja--Divisora.png" alt="Hoja-Divisora" class="Hoja-D"/>
+      <img src="Hoja--Divisora-I.png" alt="Hoja--Divisora-I" class="Hoja-I">
+     <p class="subir textoI">Itinerario</p>   
+    </div>
+    <div class="Contenedor-linea">
+      <div class="linea-horizontal"></div>
+      
+    </div>
+
+    
+
+    
+  
+
+
+
+    <div class="Contenedor-ceremonia subir">
+      <div class ="textoi">
+        <p class="texto">6:00 PM <br>Ceremonia</p> 
+      </div>  
+     <div><img src="Iglesia.png" class="iglesia2"alt="Iglesia"></div>
+    </div>
+
+    <div class="Contenedor-recepcion subir">
+      <div><img src="Copas.png" class="copas2"alt="Copas"></div>
+      <div class ="textoi">
+        <p class="texto">9:00 PM <br>Recepción</p> 
+      </div>   
+    </div>
+
+    <div class="Contenedor-vals subir">
+      <div class ="textoi">
+        <p class="texto">9:40 PM <br>Vals</p> 
+      </div>   
+      <div><img src="vals.png" class="vals"alt="vals"></div>
+    </div>
+
+    <div class="Contenedor-cena subir">
+      <div><img src="cena.png" class="cena"alt="cena"></div>
+      <div class ="textoi">
+        <p class="texto">10:00 PM <br>Cena</p> 
+      </div>   
+    </div>
+    <div class="Contenedor-baile subir">
+      <div class ="textoi">
+        <p class="texto">10:30 PM <br>Baile</p> 
+      </div>   
+      <div><img src="baile.png" class="baile"alt="baile"></div>
+    </div>
+
+    <div class="Contenedor-despedida subir">
+      <div><img src="carruaje.png" class="carruaje"alt="carruaje"></div> 
+      <div class ="textoi">
+        <p class="texto">2:00 AM <br>Despedida</p> 
+      </div>        
+    </div>
+
+
+
+    
+
+    
+
+    <div class="codigo-vestimenta subir">
+      <p class="subir texto1 "> Código de Vestimenta <br>Formal</p>
+      <img src="dress_code.png" class="dress_code subir" alt="Dress Code" />
+      <div class="bloque-circulo subir">
+        <p class="texto">Color reservado <br> para la <br> quinceañera</p>
+        <div class="circulo"></div>
+      </div>
+    </div>
+    
+
+    <h5 class="subir">Sugerencia de regalo</h5>
+    <p class="texto-regalo subir texto">
+      Tu presencia es el mejor obsequio<br> en este día tan especial.</p>
+    <p class="texto-regalo subir texto"> Pero si deseas tener un lindo <br> detalle conmigo, estaré recibiendo <br>lluvia de sobres con mucho cariño.</p>
+    <div class="Fondo-Sobre">
+      <img src="Sobre.png" alt="Sobre" class="sobre">
+    </div>
+
+    <p class=" subir textod">¡Te esperamos!</p>
+  </div>
+  <!-- Imágenes decorativas -->
+  <img src="Flor_Hoja_inferior.png" alt="Flores Inferior" class="Flores_Inf" />
+  <img src="Flor_Hoja_Superior.png" alt="Flores Superior" class="Flores_Sup"/>
+  <img src="Mariposa_2.png" alt="Mariposa 2" class="Mariposa-2"/>
+  <img src="Hoja_Sup_derecho.png" alt="Hoja Superior" class="Hoja_Sup"/>
+  <img src="Mariposa_1.png" alt="Mariposa 1" class="Mariposa_1">
+  
+  
+  
+  <script src="main.js"></script>
+
+  <div class="confirmacion-whatsapp">
+    <texto-Con>Confirma tu asistencia</texto-Con>
+    <p class="texto">
+      Nos encantaría contar contigo en nuestros XV años. 💖<br>
+    </p>
+  
+    <a href="https://w.app/krilub" target="_blank">
+      <button>Confirmar</button>
+    </a>
+  </div>
+
+  
+  <img src="Mariposas.gif" alt="Mariposas volando" class="mariposas-gif" />
+</body>
+</html>
